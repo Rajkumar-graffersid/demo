@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import "./CarouselCards.css";
+import "./Carouselcards.css";
 
 const CarouselCards = ({ cards, currentCard, setCurrentCard }) => {
   const nextCard = () => {
