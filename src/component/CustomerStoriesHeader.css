@@ -1,0 +1,36 @@
+.customer-stories-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 48px;
+  width: 332px;
+}
+
+/* Eyebrow / Label */
+.eyebrow {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.52;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2950da;
+}
+
+/* Main Headline */
+.headline-customer {
+  font-family: "TASA Orbiter Display SemiBold", sans-serif;
+  font-size: 40px;
+  line-height: 46px;
+  color: #243547;
+  margin: 0;
+}
+
+/* Supporting text */
+.subtext {
+  font-family: "TASA Orbiter Display SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.72);
+  margin: 0;
+}

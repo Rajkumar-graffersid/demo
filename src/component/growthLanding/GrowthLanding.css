@@ -1,0 +1,141 @@
+:root {
+  --primary-blue: rgb(48, 94, 255);
+  --text-dark: rgb(25, 40, 57);
+  --bg-light: #ffffff;
+}
+
+.landing-wrapper {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "TASA Orbiter", sans-serif;
+}
+
+/* Navbar */
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-underline {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary-blue);
+}
+
+.nav-divider {
+  width: 1px;
+  height: 20px;
+  background: #e0e0e0;
+}
+
+/* Buttons */
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+/* Layout Sections */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 4rem;
+  min-height: 80vh;
+  padding: 4rem 10%;
+}
+
+.hero-section.reverse {
+  direction: rtl;
+}
+
+.hero-section.reverse .hero-text {
+  direction: ltr;
+}
+
+.display-text {
+  font-size: 4rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.sub-text {
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+
+.media-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-video,
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+/* Intro Parallax */
+.sticky-intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 8rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.intro-title.right {
+  align-self: flex-end;
+  color: var(--primary-blue);
+}

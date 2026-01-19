@@ -1,0 +1,423 @@
+/* Main Scroll Animation Section */
+.scroll-animation-section {
+  position: relative;
+  /* min-height: 400vh; */
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #52a2bf 100%);
+}
+
+/* Initial Title Container */
+.title-container {
+  position: sticky;
+  top: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 5%; */
+  /* margin-bottom: 100vh; */
+  z-index: 5;
+}
+
+.split-title {
+  font-family: "TASA Orbiter Display Regular", "Inter", -apple-system,
+    sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: rgb(25, 40, 57);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.split-title-right {
+  text-align: right;
+}
+
+.split-title-left {
+  text-align: left;
+}
+
+/* Sticky Container */
+.sticky-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Main Content */
+.main-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+  max-width: 900px;
+}
+
+.main-heading {
+  font-family: "TASA Orbiter Deck SemiBold", "Inter", -apple-system, sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 78px;
+  color: rgb(255, 255, 255);
+  margin: 0 0 1rem 0;
+}
+
+.main-subheading {
+  font-family: "TASA Orbiter Display Regular", "Inter", -apple-system,
+    sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+/* Island Elements */
+.island-left {
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  z-index: 5;
+}
+
+.island-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.island-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.island-right {
+  position: absolute;
+  width: 853px;
+  height: 236px;
+  z-index: 3;
+}
+
+.island-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Floating Products */
+.floating-products {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.product-bag {
+  position: absolute;
+  right: 20px;
+}
+
+.product-bag img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bag-1 {
+  top: 10%;
+  width: 132px;
+  height: 180px;
+}
+
+.bag-2 {
+  top: 35%;
+  width: 176px;
+  height: 200px;
+}
+
+.bag-3 {
+  top: 65%;
+  width: 186px;
+  height: 253px;
+}
+
+/* Island Shadow */
+.island-shadow {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1440px;
+  height: 36px;
+  opacity: 0.3;
+}
+
+.island-shadow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cloud Elements */
+.cloud {
+  position: absolute;
+  width: 606px;
+  height: 405px;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.cloud img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.cloud-bottom {
+  bottom: 10%;
+  left: 30%;
+}
+
+.cloud-right {
+  top: 30%;
+  right: 10%;
+}
+
+.cloud-left {
+  top: 40%;
+  left: 5%;
+}
+
+/* Swipe Down Indicator */
+.swipe-indicator {
+  position: absolute;
+  bottom: 8%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  z-index: 15;
+}
+
+.swipe-indicator p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.arrow-animation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.arrow-line {
+  width: 24px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+/* Science Section */
+.science-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgb(82, 162, 191) 0%,
+    rgb(95, 179, 209) 15%,
+    rgb(255, 255, 255) 160%
+  );
+  /* padding: 10% 5%; */
+  overflow: hidden;
+}
+
+.science-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  top: 71px;
+  max-width: 1400px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.science-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.science-phone {
+  position: relative;
+  width: 1200px;
+  max-width: 1440px;
+}
+
+.phone-bg-blur,
+.phone-mesh {
+  position: absolute;
+  bottom: -210px;
+  left: -110px;
+  width: 900px;
+  height: 55%;
+  object-fit: fill;
+}
+
+.phone-bg-blur {
+  filter: blur(10px);
+  opacity: 0.5;
+}
+
+/* Science Right Side */
+.science-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  position: relative;
+  right: 460px;
+  top: 20px;
+  width: 600px;
+}
+
+.science-text h2 {
+  font-family: "TASA Orbiter Display SemiBold", "Inter", -apple-system,
+    sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  color: rgb(255, 255, 255);
+  margin: 0 0 1rem 0;
+}
+
+.science-text p {
+  font-size: 20px;
+  line-height: 20px;
+  color: rgb(248, 250, 252);
+  margin: 0;
+}
+
+/* Science Clouds */
+.science-clouds {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.science-cloud-1,
+.science-cloud-2,
+.science-cloud-3 {
+  position: absolute;
+  width: 606px;
+  height: 405px;
+  object-fit: fill;
+}
+
+.science-cloud-1 {
+  top: 5%;
+  left: -20%;
+  opacity: 0.4;
+}
+
+.science-cloud-2 {
+  top: 15%;
+  right: -20%;
+  opacity: 0.4;
+}
+
+.science-cloud-3 {
+  bottom: -12%;
+  left: 20%;
+  opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .split-title {
+    font-size: 56px;
+  }
+
+  .main-heading {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .island-left {
+    width: 700px;
+    height: 400px;
+  }
+
+  .science-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .science-text h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .split-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .main-subheading {
+    font-size: 16px;
+  }
+
+  .island-left {
+    width: 90%;
+    height: 300px;
+  }
+
+  .swipe-indicator {
+    right: 5%;
+    bottom: 5%;
+  }
+
+  .swipe-indicator p {
+    font-size: 10px;
+  }
+
+  .cloud {
+    width: 300px;
+    height: 200px;
+  }
+
+  .science-text h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,72 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 100;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  height: 28px;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.menu-item {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #305eff;
+  transition: width 0.3s ease;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 16px;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: white;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}

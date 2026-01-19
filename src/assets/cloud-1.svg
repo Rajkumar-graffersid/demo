@@ -1,0 +1,14 @@
+<svg
+                    width={60}
+                    height={40}
+                    viewBox="0 0 100 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M30 50C15 50 5 40 5 28C5 18 12 10 22 10C25 5 30 2 35 2C45 2 52 8 55 18C65 18 72 25 72 35C72 45 65 50 55 50"
+                      fill="white"
+                      stroke="#E0E7FF"
+                      strokeWidth="1.5"
+                    />
+                  </svg>

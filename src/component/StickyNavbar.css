@@ -1,0 +1,216 @@
+.hero-section {
+  /* height: 100vh; */
+  /* background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #db2777 100%); */
+  position: relative;
+}
+
+.navbar-transparent {
+  background-color: rgba(255, 255, 255, 0.1); /* slight tint */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  transition: all 0.3s ease;
+}
+
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #ffffff !important; */
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+  z-index: 1050;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(90deg, #7cc7e8, #b3d9f3); */
+  /* position: relative; */
+  /* z-index: 100; */
+}
+
+.navbar-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+}
+
+.nav-link-light {
+  color: rgba(255, 255, 255, 0.9) !important;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Hover effect */
+.nav-link-light:hover {
+  color: #2563eb !important; /* blue */
+}
+
+/* Bottom border animation */
+.nav-link-light::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  /* background-color: #2563eb; */
+  transition: width 0.25s ease;
+}
+
+.nav-link-light:hover::after {
+  width: 100%;
+}
+
+.hover-border {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+}
+
+.hover-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* distance from text */
+  width: 0;
+  height: 4px;
+  background-color: #2563eb;
+  transition: width 0.2s ease;
+}
+
+.hover-border:hover::after {
+  width: 100%;
+}
+.nav-link-dark {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.nav-link-dark:hover {
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.brand-light {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.brand-dark {
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+/* container for the whole effect */
+.cloud-section {
+  position: relative;
+  height: 220vh; /* long section so animation has space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 60%);
+}
+
+/* left/right content that should appear "behind" the cloud stack */
+.cloud-section {
+  /* height: 220vh; */
+  position: relative;
+  background: #f5f7fb;
+  overflow: hidden;
+}
+
+/* side content */
+.cloud-side {
+  position: absolute;
+  top: 45%;
+  width: 20%;
+  z-index: 1;
+  color: #333;
+}
+
+.cloud-side.left {
+  left: 3%;
+}
+
+.cloud-side.right {
+  right: 3%;
+  text-align: right;
+}
+
+/* main cloud block */
+.cloud-container {
+  position: sticky;
+  /* top: 120px; */
+  height: 55vh;
+  margin: 0 auto;
+  background: transparent;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 16px;
+}
+
+/* cloud layers */
+.cloud {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* density effect */
+.layer-front {
+  transform: scale(1.05) translateY(0);
+  z-index: 3;
+}
+
+.layer-mid {
+  transform: scale(1.1) translateY(10px);
+  z-index: 2;
+}
+
+.layer-back {
+  transform: scale(1.15) translateY(20px);
+  z-index: 1;
+}
+
+/* content inside */
+.cloud-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
+
+.padding-left-right {
+  padding-left: 9rem;
+  padding-right: 3rem;
+}

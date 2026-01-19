@@ -1,0 +1,69 @@
+/* 1. THE TRACK: Very tall to allow for scrolling time */
+.cloud-scroll-track {
+  height: 300vh; /* Adjust this to make animation slower/faster */
+  position: relative;
+}
+
+/* 2. THE STICKY WRAPPER: Pins content to screen */
+.cloud-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  /* margin-top: -100px; */
+  height: 150vh;
+  width: 100%;
+  overflow: hidden; /* Ensures content doesn't spill out */
+  display: flex;
+  align-items: center; /* Vertically center the cloud bar */
+  justify-content: center;
+  background-color: #f0f0f0; /* Page background color */
+}
+
+/* 3. BACKGROUND CONTENT LAYOUT */
+.background-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  z-index: 0; /* Behind the cloud */
+  pointer-events: none; /* Let scroll pass through */
+}
+
+.side {
+  max-width: 200px;
+}
+
+/* 4. THE CLOUD CONTAINER */
+.cloud-container {
+  /* height: 300px; Fixed height for the bar */
+  background: #aaccff; /* Sky blue background behind clouds */
+  position: relative;
+  z-index: 10; /* Above background content */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cloud Layers */
+.cloud {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+/* Inner Text */
+.cloud-inner {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: white;
+}

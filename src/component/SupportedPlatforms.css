@@ -1,0 +1,72 @@
+.supported-platforms {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  width: fit-content;
+  font-family: sans-serif;
+}
+
+/* Title */
+.section-title {
+  font-family: "TASA Orbiter Display SemiBold", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: #5c5c5c;
+  margin: 0;
+}
+
+/* Group */
+.platform-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.platform-title {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #192839;
+  margin: 0;
+}
+
+/* List */
+.platform-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* Item */
+.platform-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 5px;
+  box-shadow: 0 1rem 3rem #789de7;
+}
+
+/* Indicator (dot + line) */
+.indicator {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #192839;
+}
+
+.line {
+  width: 32px;
+  height: 2px;
+  background-color: #192839;
+}
+
+/* Logos */
+.platform-item img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}

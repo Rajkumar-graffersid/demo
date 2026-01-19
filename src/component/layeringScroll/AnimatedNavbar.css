@@ -1,0 +1,35 @@
+.animated-navbar {
+  /* Base styles are in inline styles for simplicity */
+  width: 75%;
+}
+.animated-navbar a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.animated-navbar a:hover {
+  color: #528ff0 !important;
+}
+
+.animated-navbar button:hover {
+  background-color: #3a7bd5 !important;
+}
+
+.active-tab {
+  border-bottom: 2px solid #528ff0;
+}
+/* Smooth entrance animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-navbar.visible {
+  animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

@@ -1,0 +1,48 @@
+.cloud-section {
+  height: 300vh;
+  background: #0a0a0a;
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-container {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CLOUD IMAGES */
+.cloud {
+  position: absolute;
+  width: 300px;
+  pointer-events: none;
+}
+
+/* CENTER CONTENT */
+.cloud-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.cloud-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-content p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
