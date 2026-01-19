@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import "./PhoneInteraction.css";
+import "./Phoneinteraction.css";
 
 const PhoneInteraction = ({ isScience = false, current }) => {
   const [activeSlide, setActiveSlide] = useState(0);
