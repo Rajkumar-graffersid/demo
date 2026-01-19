@@ -7,7 +7,7 @@ import {
 } from "framer-motion";
 import PhoneInteraction from "./Phoneinteraction";
 import CarouselCards from "./Carouselcards";
-import "./ScrollAnimationSection.css";
+import "./Scrollanimationsection.css";
 
 const ScrollAnimationSection = () => {
   const containerRef = useRef(null);
